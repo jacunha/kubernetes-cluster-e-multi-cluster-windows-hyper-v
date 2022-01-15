@@ -207,13 +207,21 @@ IP da placa usada na **bridge** (Ponte de Rede)
 ```powershell
 (Get-NetIPAddress -InterfaceAlias 'Wi-Fi').IPAddress
 ```
+
+Saída:
+```
+PS C:\> (Get-NetIPAddress -InterfaceAlias 'Wi-Fi').IPAddress
+fe80::cda8:d636:2232:ad2e%6
+192.168.31.81
+PS C:\>
+```
 > Aqui notamos o impácto da criação do **virtual switch**, a inteface física **Wi-Fi** pertence a rede **182.168.31.0/24** e os IPs dos cluster também pertencem a mesma rede.
  
 ### Verificando os clusters kubernetes disponíveis no seu ambiente
 ```powershell
 kubectl config get-contexts
 ```
- 
+
 Repare que o último cluster é o cluster corrente no **kubectl**
 ```
 PS C:\> kubectl config get-contexts
