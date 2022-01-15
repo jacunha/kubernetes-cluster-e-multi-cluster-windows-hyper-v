@@ -80,9 +80,9 @@ Neste ponto, você pode abrir um novo terminal e testar tanto o comando ```minik
 ## Criando um cluster ou multi-cluster kubernetes
 Aqui, criarei um cluster de nó único, que pode ser utilizado para estudos mesmo em uma máquina com poucos recursos e mais dois clusters kubernetes (lab-k8s-dev e lab-k8s-prod) idênticos para trabalhar em multi-cluster.
  
-Aqui há um ponto que difere uma implantação do Kubernetes no Hyper-V em relação ao VirtualBox, no Hyper-V, precisaremos criar um _**virtual switch** para fazer as conexões externas com o nó, ou nós do cluster Kubernetes.
- 
-Para isto, iremos associar este _**virtual switch**_ a uma interface física de rede da nossa máquina host (nosso computador).
+Aqui há um ponto que difere uma implantação "básica" do Kubernetes via minikube. Por padrão, a conexão externa do seu cluster sempre será via NAT (network address translation)  e sempre que quiser acessar um recurso no seu cluster, você precisará criar um redirecionamento.
+
+Para garantir que nosso cluster tenha um endereço local da nossa rede, iremos criar um _**virtual switch** que fará uma bridge (ponte de rede) com uma interface física do computador host, garantindo o acesso direto ao cluster sem a necessidade da criação de redirecionamentos e podendo ser acessivel por outros dispositivos na sua rede local.
  
 ### Obtendo o nome da interface física de rede
 Seguindo o critério de "executar todas as ações via terminal", precisamos identificar qual interface física de rede usaremos, identificando o seu ID para usar na criação do _**virtual switch**_.
