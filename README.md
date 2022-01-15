@@ -215,7 +215,7 @@ fe80::cda8:d636:2232:ad2e%6
 192.168.31.81
 PS C:\>
 ```
-> Aqui notamos o impácto da criação do **virtual switch**, a inteface física **Wi-Fi** pertence a rede **182.168.31.0/24** e os IPs dos cluster também pertencem a mesma rede.
+> Aqui notamos o impácto da criação do **virtual switch**, a inteface física **Wi-Fi** e os nós do clusters pertencem a mesma rede, **182.168.31.0/24**, facilitando o acesso por outros dispositivos na rere.
  
 ### Verificando os clusters kubernetes disponíveis no seu ambiente
 ```powershell
