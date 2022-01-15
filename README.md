@@ -22,7 +22,7 @@ Dito isto, neste guia usaremos o mínimo de programas externos, apenas o **minik
 ---
 ## Preparando o Sistema Operacional Host (Windows)
  
-Cada nó kubernetes utilizará uma máquina virtual que será provisionada utilizaremos o virtualizador de hardware nativo do Windows, o **Hyper-V**, que não vem habilitado por padrão.
+Cada nó kubernetes utilizará uma máquina virtual que será provisionada utilizando o virtualizador de hardware nativo do Windows, o **Hyper-V**, que não vem habilitado por padrão.
  
 ### Habilitando o Hyper-V via PowerShell
 > Após a execução deste comando, o computador será reiniciado.
