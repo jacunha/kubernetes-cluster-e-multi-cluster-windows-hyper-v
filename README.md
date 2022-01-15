@@ -235,7 +235,7 @@ CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
 PS C:\>
 ```
  
-Listando todos os **pods** em todos os **namespaces** em ***lab-k8s-prod**
+Listando todos os **pods** em todos os **namespaces** em **lab-k8s-prod**
 ```
 PS C:\> kubectl get pods --all-namespaces
 NAMESPACE     NAME                                   READY   STATUS    RESTARTS   AGE
