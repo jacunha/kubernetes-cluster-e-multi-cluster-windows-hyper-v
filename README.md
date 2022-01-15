@@ -97,6 +97,17 @@ Conexão de Rede Bluetooth
 Wi-Fi
 ```
 Neste guia, usarei a interface de ID "**Wi-Fi**"):
+
+### Criando o Virtual Switch no Hyper-V
+```powershell
+New-VMSwitch -name 'Minikube Switch' -NetAdapterName 'Wi-Fi' -AllowManagementOs $true -Notes 'Minikube: switch de comunicação com o Kubernetes.'
+```
+Exemplo de saída:
+```
+Name            SwitchType NetAdapterInterfaceDescription
+----            ---------- ------------------------------
+Minikube Switch External   Intel(R) Wi-Fi 6E AX210 160MHz
+```
  
 > O sistema irá criar uma bridge entre o **virtual switch** e a interface física escolhida mas, por algum motivo (bug) que não sei explicar, após a criação desta bridge, a banda da minha interface física Wi-Fi ficou limitada a 8 Mbp/s.
 Se isto ocorrer com você, apenas desative e ative a bridge ("Ponte de Rede", no Windows) e este bug será corrigido.
@@ -116,16 +127,6 @@ Wi-Fi
 Disable-NetAdapter -Name 'Ponte de Rede' -Confirm:$false
 Start-Sleep -Seconds 5
 Enable-NetAdapter -Name 'Ponte de Rede' -Confirm:$false
-```
-### Criando o Virtual Switch no Hyper-V
-```powershell
-New-VMSwitch -name 'Minikube Switch' -NetAdapterName 'Wi-Fi' -AllowManagementOs $true -Notes 'Minikube: switch de comunicação com o Kubernetes.'
-```
-Exemplo de saída:
-```
-Name            SwitchType NetAdapterInterfaceDescription
-----            ---------- ------------------------------
-Minikube Switch External   Intel(R) Wi-Fi 6E AX210 160MHz
 ```
  
 ### Criando um cluster Kubernetes de nó único
