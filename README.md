@@ -60,7 +60,7 @@ Para utilizarmos o minikube e kubectl, iremos baixar os dois binários diretamen
 Invoke-WebRequest -OutFile 'c:\minikube\minikube.exe' -Uri 'https://github.com/kubernetes/minikube/releases/latest/download/minikube-windows-amd64.exe' -UseBasicParsing
 ```
  
-Quando meu primeiro nó kubernetes, percebi que não foi baixado a ultima versão estável do kubernetes, para garantir que usaremos a última versão estável do kubernetes, iremos carregar, na variável ```$kubeVersion```, a última versão estável do kubernetes.
+Quando provisionei meu primeiro nó kubernetes, percebi que não foi baixado a ultima versão estável do kubernetes, para garantir que usaremos a última versão estável do kubernetes, iremos carregar, na variável ```$kubeVersion```, a última versão estável do kubernetes.
  
 ### Consultando a última versão estável do kubernetes
 ```powershell
