@@ -98,7 +98,7 @@ Wi-Fi
 ```
 Neste guia, usarei a interface de ID "**Wi-Fi**"):
  
-> O sistema irá criar uma bridge entre o **virtual switch** e a interface física escolhida mas, por algum motivo (bug) que não sei explicar, após a criação desta bridge, a banda na minha interface física Wi-Fi ficou limitada a 8 Mbp/s.
+> O sistema irá criar uma bridge entre o **virtual switch** e a interface física escolhida mas, por algum motivo (bug) que não sei explicar, após a criação desta bridge, a banda da minha interface física Wi-Fi ficou limitada a 8 Mbp/s.
 Se isto ocorrer com você, apenas desative e ative a bridge ("Ponte de Rede", no Windows) e este bug é corrigido.
  
 ```porweshwll
