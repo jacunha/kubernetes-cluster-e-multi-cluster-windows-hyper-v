@@ -191,7 +191,7 @@ PS C:\>
 minikube profile list
 ```
 Saída
-```powershell
+```
 PS C:\> minikube profile list
 |--------------|-----------|---------|----------------|------|---------|---------|-------|
 |   Profile    | VM Driver | Runtime |       IP       | Port | Version | Status  | Nodes |
@@ -209,7 +209,7 @@ kubectl config get-contexts
 ```
  
 Repare que o último cluster é o cluster corrente no **kubectl**
-```powershell
+```
 PS C:\> kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
           lab-k8s-01     lab-k8s-01     lab-k8s-01     default
@@ -235,7 +235,7 @@ PS C:\>
 ```
  
 Listando todos os **pods** em todos os **namespaces** em ***lab-k8s-prod**
-```powershell
+```
 PS C:\> kubectl get pods --all-namespaces
 NAMESPACE     NAME                                   READY   STATUS    RESTARTS   AGE
 kube-system   coredns-64897985d-9nwhj                1/1     Running   0          24m
