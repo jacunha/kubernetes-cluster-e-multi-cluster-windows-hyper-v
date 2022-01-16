@@ -216,7 +216,7 @@ fe80::cda8:d636:2232:ad2e%6
 PS C:\>
 ```
 > Aqui notamos o impácto da criação do **virtual switch**, a inteface física **Wi-Fi** e os nós dos clusters pertencem a mesma rede (**192.168.31.0/24**).
-> Este tipo de implantação, também permite que qualquer outro equipamento na mesma rede acesse os clusters (ex: celular, tablet, computador, etc) para tetar seus futuros **deployments**.
+> Este tipo de implantação, também permite que qualquer outro equipamento na mesma rede acesse os clusters (ex: celular, tablet, computador, etc) para testar seus futuros **deployments**.
  
 ### Verificando os clusters kubernetes disponíveis no seu ambiente
 ```powershell
