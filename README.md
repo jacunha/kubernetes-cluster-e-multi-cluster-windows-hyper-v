@@ -229,7 +229,7 @@ PS C:\>
 kubectl config get-contexts
 ```
 
-Repare que o último cluster é o cluster corrente no **kubectl**
+Repare que o cluster **lab-k8s-dev** é o cluster corrente no **kubectl**
 ```
 PS C:\> kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
