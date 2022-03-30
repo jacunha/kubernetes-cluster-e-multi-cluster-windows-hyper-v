@@ -19,7 +19,7 @@ Para quem esta procurando conteúdo em **DevOps**, **SRE** e **IaC**, estas são
 - Windows 10/11 Professional
 > Windows 10/11 Single Language (Home) e Powershell 5 infelizmente não funciona com este guia.
 
-O foco aqui é criar um ambiente para estudar Kubernetes e, se se você tem apenas um computador com Windows, este guia é para você, agora se você já possui um sistema operacional Linux, recomendo que você treine o Kubernetes diretamente no Linux e descarte este guia ou, se quiser conhecer como as coisas funcionam no Windows será um prazer compartilhar.
+O foco aqui é criar um ambiente para estudar Kubernetes e, se você tem apenas um computador com Windows, este guia é para você, agora se você já possui um sistema operacional Linux, recomendo que você treine o Kubernetes diretamente no Linux e descarte este guia ou, se quiser conhecer como as coisas funcionam no Windows será um prazer compartilhar.
  
 Dito isto, neste guia usaremos o mínimo de programas externos, apenas o **minikube** e o **kubectl**, todo o resto será feito nativamente no sistema operacional Windows.
  
