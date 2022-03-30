@@ -137,7 +137,7 @@ Enable-NetAdapter -Name 'Ponte de Rede' -Confirm:$false
  
 ### Criando um cluster Kubernetes de nó único
  
-O **Minikube** diferencia um cluster através do parâmetro ```--profile```, se este parâmetro for omitido, ele utiliza o default e sempre irá sobrepor a configuração anterior, caso você trabalhe com mais de um cluster, mesmo que de nó único, recomendo utilizar o parâmetro ```--profile <nome-do-cluster>```, isto preservará as configuração do seu cluster e permitirá que o kubectl interaja com com o seu cluster apenas trocando o contexto.
+O **Minikube** diferencia um cluster através do parâmetro ```--profile```, se este parâmetro for omitido, ele utiliza o default e sempre irá sobrepor a configuração anterior, caso você trabalhe com mais de um cluster, mesmo que de nó único, recomendo utilizar o parâmetro ```--profile <nome-do-cluster>```, isto preservará as configuração do seu cluster e permitirá que o kubectl interaja com o seu cluster apenas trocando o contexto.
  
 ### Criando cluster de nó unico
 Em um novo terminal, carregue a variável ```$kubeVersion``` novamente.
