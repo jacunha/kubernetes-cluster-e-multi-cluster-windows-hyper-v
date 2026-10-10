@@ -148,7 +148,7 @@ Write-Output $kubeVersion
  
 ### Criando o cluster
 ```powershell
-minikube start --bootstrapper=kubeadm --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --memory=4096 --cpus=2 --profile=lab-k8s-01
+minikube start --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --memory=4096 --cpus=2 --profile=lab-k8s-01
 ```
 Se você ver a saída abaixo, sucesso!!!
 ```
