@@ -157,7 +157,7 @@ Done! kubectl is now configured to use "lab-k8s-01" cluster and "default" namesp
 > Note que neste momento, há dois namespaces disponíveis, **lab-k8s-01** e **default**, lembrando que default não foi provisionado.
  
 - Caso o comando retorne o erro ```No Major.Minor.Patch elements found```, é porque a variável ```$kubeVersion``` não foi carregada.
-- O parâmetro ```--bootstrapper```, ```--memory``` e ```--cpus``` podem ser omitidos, eu prefiro usá-los para limitar os recursos do cluster.
+- O parâmetro ```--memory``` e ```--cpus``` podem ser omitidos, eu prefiro usá-los para limitar os recursos do cluster.
  
  
 ### Criando mais de um cluster com mais de um nó cada (multi-cluster)
@@ -165,12 +165,12 @@ No exemplo abaixo, criarei o cluster lab-k8s-prod e o lab-k8s-dev, cada um com 3
  
 ### Cluster **lab-k8s-prod**
 ```powershell
-minikube start --bootstrapper=kubeadm --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --nodes=3 --memory=4096 --cpus=2 --profile=lab-k8s-prod
+minikube start --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --nodes=3 --memory=4096 --cpus=2 --profile=lab-k8s-prod
 ```
  
 ### Cluster **lab-k8s-dev**
 ```powershell
-minikube start --bootstrapper=kubeadm --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --nodes=3 --memory=4096 --cpus=2 --profile=lab-k8s-dev
+minikube start --driver=hyperv --hyperv-virtual-switch 'Minikube Switch' --kubernetes-version=$kubeVersion --nodes=3 --memory=4096 --cpus=2 --profile=lab-k8s-dev
 ```
  
 ---
